@@ -1,20 +1,25 @@
 import React from "react";
+import Tab from 'react-bootstrap/Tab';
+import Tabs from 'react-bootstrap/Tabs';
 
 const NavTabs = () => {
     return(
     <div classNameNameName="container">
-        <ul class="nav nav-tabs">
-            <li class="nav-item">
-              <a class="nav-link active" data-bs-toggle="tab" href="#home"><span><i class="fa-solid fa-grip"></i></span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="tab" href="#profile"><span><i class="fa-solid fa-square"></i></span></a>
-            </li>
-          </ul>
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade active show" id="home">.ajdgapsejovasenovmas </div>
-                <div class="tab-pane fade" id="profile">asjbieanjfml;kadsm,f</div>
-            </div>
+        <Tabs
+      defaultActiveKey="profile"
+      id="uncontrolled-tab-example"
+      className="mb-3"
+    >
+      <Tab eventKey="home" title="Home">
+        this is the home page
+      </Tab>
+      <Tab eventKey="profile" title="Profile">
+        this is the second temporary page
+      </Tab>
+      <Tab eventKey="contact" title="Contact" >
+        this is a temporary page
+      </Tab>
+    </Tabs>
     </div>)
 }
 
